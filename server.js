@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const PORT = process.env.PORT || 8000
 
-//----------CREATE EXPRESS APP----------//
+//----------CREATE EXPRESS----------//
 const app = express()
 
 app.use(express.urlencoded({ extended: true }))
