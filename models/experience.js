@@ -5,7 +5,7 @@ const experienceSchema = new mongoose.Schema({
   employmentType: { type: String },
   companyName: { type: String, required: true },
   location: { type: String },
-  currentStatus: { Boolean, required: true },
+  currentStatus: { type: Boolean, required: true },
   startMonth: { type: String },
   startYear: { type: String }
 })
