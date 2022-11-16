@@ -23,7 +23,7 @@ const userSchema = new Schema({
 })
 
 //----------make user model----------//
-const User = model('User, userSchema')
+const User = model('User', userSchema)
 
 //----------EXPORT MODEL----------//
 module.exports = User
