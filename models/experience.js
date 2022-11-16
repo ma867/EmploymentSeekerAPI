@@ -10,6 +10,6 @@ const experienceSchema = new mongoose.Schema({
   startYear: { type: String }
 })
 
-const Experience = mongoose.model('Fruit', fruitSchema)
+const Experience = mongoose.model('Experience', experienceSchema)
 
 module.exports = Experience
