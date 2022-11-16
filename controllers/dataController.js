@@ -6,7 +6,7 @@ const Education = require('../models/education')
 const dataController = {
 
     userIndex(req, res, next) {
-        User.find({ username: req.session.username }, (err, foundUsers) => {
+        User.find({}, (err, foundUsers) => {
             if (err) {
                 console.error(err)
                 res.status(400).send(err)
@@ -45,8 +45,7 @@ const dataController = {
         })
     },
 
-    userCreate(req, res, next) {
-        req.body.username = req.session.username
+    userCreate(req, res, next) {                                                                                                    
         User.create(req.body, (err, createdUser) => {
             if (err) {
                 console.error(err)
@@ -74,7 +73,7 @@ const dataController = {
     },
 
     experienceIndex(req, res, next) {
-        Experience.find({username: req.session.username }, (err, foundExperiences) => {
+        Experience.find({}, (err, foundExperiences) => {
             if (err) {
                 console.error(err)
                 res.status(400).send(err)
@@ -101,7 +100,7 @@ const dataController = {
         })
     },
     experienceShow(req, res, next) {
-        Experience.findById(req.params.id).populate('songs').exec((err, foundExperience) => {
+        Experience.findById(req.params.id,(err, foundExperience) => {
             if (err) {
                 console.error(err)
                 res.status(400).send(err)
@@ -138,7 +137,7 @@ const dataController = {
         })
     },
     educationIndex(req, res, next) {
-     Education.find({ username: req.session.username }, (err, foundEducations) => {
+     Education.find({}, (err, foundEducations) => {
          if (err) {
              console.error(err)
              res.status(400).send(err)
@@ -178,7 +177,6 @@ const dataController = {
  },
 
  educationCreate(req, res, next) {
-     req.body.username = req.session.username
      Education.create(req.body, (err, createdEducation) => {
          if (err) {
              console.error(err)
