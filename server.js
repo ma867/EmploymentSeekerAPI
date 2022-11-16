@@ -1,12 +1,16 @@
 require('dotenv').config()
 const express = require('express')
 const PORT = process.env.PORT || 8000
+const db = require('./models/db')
+
 
 //----------CREATE EXPRESS----------//
 const app = express()
-
 app.use(express.urlencoded({ extended: true }))
 
+db.once('open', () => {
+    console.log('YERRRRR it\'s connected to MongoDB')
+})
 
 //----------TEST EXPRESS----------//
 app.get('/', (req,res)=>{
@@ -21,4 +25,3 @@ app.get('/', (req,res)=>{
 app.listen(PORT, () => {
     console.log('yerrrr its running on', PORT)
 })
-
