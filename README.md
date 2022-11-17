@@ -12,16 +12,16 @@ Our API focuses solely on the the Job Seeker side of the application.
 ## Trello
 * [Trello](/https://trello.com/b/h0TdY1a9/group-project-api)
 ### Figma
-![Sign Up](/https://imgur.com/a/NzVSxph)
-![User Profile](/https://imgur.com/a/ybi6x17)
+![ Sign Up ](/https://imgur.com/a/NzVSxph)
+![ User Profile ](/https://imgur.com/a/ybi6x17)
 ## Lucid Chart
-![Lucid Flow Chart](/https://imgur.com/a/XwHTVjd)
+![ Lucid Flow Chart ](/https://imgur.com/a/XwHTVjd)
 
 ### Technologies
 ***
 A list of technologies used within the project:
-* [JavaScript]
-* [MongoDB]
+* [ JavaScript ]
+* [ MongoDB ]
 
 ### REST-ful Routes
 ***
