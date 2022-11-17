@@ -12,10 +12,10 @@ Our API focuses solely on the the Job Seeker side of the application.
 ## Trello
 * [Trello](/https://trello.com/b/h0TdY1a9/group-project-api)
 ### Figma
-![ Sign Up ](/https://imgur.com/a/NzVSxph)
-![ User Profile ](/https://imgur.com/a/ybi6x17)
+![ Sign Up ](https://i.imgur.com/qLxeCAf.png)
+![ User Profile ](https://i.imgur.com/sDpLX3N.png)
 ## Lucid Chart
-![ Lucid Flow Chart ](/https://imgur.com/a/XwHTVjd)
+![Lucid Flow Chart](https://i.imgur.com/9FCgKn6.png)
 
 ### Technologies
 ***
