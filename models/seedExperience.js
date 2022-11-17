@@ -6,13 +6,13 @@ const Experience = require('./experience')
 
 const starterExperience = [
     {
-        title: 'Teacher',
-        employmentType: 'Part time',
-        companyName: 'CIPMOI',
-        location: 'Belo Horizonte',
+        title: 'Nure',
+        employmentType: 'Full time',
+        companyName: 'MMC',
+        location: 'Portland',
         currentStatus: false,
         startMonth: 'May',
-        startYear: '2012'
+        startYear: '2022'
     }
 ]
 
