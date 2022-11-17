@@ -7,6 +7,12 @@ const db = require('./models/db')
 //----------CREATE EXPRESS----------//
 const app = express()
 app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use((req, res, next) => {
+    res.locals.data = {}
+    next()
+  })
+  app.use('/invisibleStrengths', require('./controllers/routeController'))
 
 db.once('open', () => {
     console.log('YERRRRR it\'s connected to MongoDB')
