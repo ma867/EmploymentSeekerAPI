@@ -17,9 +17,6 @@ Our API focuses solely on the the Job Seeker side of the application.
 ## Lucid Chart
 ![Lucid Flow Chart](/https://imgur.com/a/XwHTVjd)
 
-
-
-
 ### Technologies
 ***
 A list of technologies used within the project:
@@ -27,7 +24,7 @@ A list of technologies used within the project:
 * [MongoDB]
 
 ### REST-ful Routes
-
+***
 ## User
 | # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
 |:-----|:--------:|:--------:|:--------:|:--------:|------:|
