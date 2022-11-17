@@ -12,7 +12,7 @@ app.use((req, res, next) => {
     res.locals.data = {}
     next()
   })
-  app.use('/invisible-strengths', require('./controllers/routeController'))
+  app.use('/invisibleStrengths', require('./controllers/routeController'))
 
 db.once('open', () => {
     console.log('YERRRRR it\'s connected to MongoDB')
