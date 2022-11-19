@@ -20,8 +20,8 @@ const userSchema = new Schema({
     raceEthnicity: [{ type: String }],
     workExperience: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Experience' }],
     education: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Education' }],
-    jobsApplied: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Jobs' }],
-    jobsSaved: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Jobs' }]
+    jobsApplied: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Job' }],
+    jobsSaved: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Job' }]
 })
 
 //----------make user model----------//
