@@ -26,13 +26,13 @@ A list of technologies used within the project:
 ### Collaboration
 ***
 * Melissa Alzate - Team Lead
-* Michael O'Brien - seed.js, server.js, testing, and expansion
-* Ashley Nickens - user.js, db.js, and Trello
-* Christine Iyer - dataController, 
+* Michael O'Brien - server.js, seed files, testing, dataController, and apiController
+* Ashley Nickens - user.js, db.js, routeController, and Trello
+* Christine Iyer - dataController and apiController
 * Jason Ross - education.js
 * Jade Lee - routeController
 * Lovedy Louisjean - apiController
-* Michael Arthur - experience.js and README.md
+* Michael Arthur - experience.js, jobs.js and README.md
 
 ### REST-ful Routes
 ***
