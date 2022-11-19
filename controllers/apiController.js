@@ -1,23 +1,23 @@
 const apiController = {
     //Functions for user model
     userIndex (req, res, next) {
-      res.json(res.locals.data.foundUsers)
+      res.json(res.locals.data.users)
     },
     
     experienceIndex (req, res, next) {
-        res.json(res.locals.data.foundExperiences)
+        res.json(res.locals.data.experiences)
       },
 
       educationIndex (req, res, next) {
-        res.json(res.locals.data.foundEducations)
+        res.json(res.locals.data.educations)
       },
      
 
     userShow (req, res, next) {
-      res.json(res.locals.data.foundUser)
+      res.json(res.locals.data.user)
     },
     experienceShow (req, res, next) {
-        res.json(res.locals.data.foundExperience)
+        res.json(res.locals.data.experience)
       },
     
       educationShow (req, res, next) {
@@ -31,6 +31,8 @@ const apiController = {
         userEducationIndex (req, res, next) {
             res.json(res.locals.data.foundEducation)
         }
+        
+        res.json(res.locals.data.education)
       }
   
   
