@@ -70,3 +70,13 @@ A list of technologies used within the project:
 | 5   |  Edit  | none | GET | Edit | .findById |
 | 6   | Update | /api/education/:id | PUT | none | .findByIdAndUpdate |
 | 7   | Destroy | /api/education/:id | DELETE | none | .findbyIdAndDelete |
+
+## Job
+| # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
+|:-----|:--------:|:--------:|:--------:|:--------:|------:|
+| 1   | Index | /api/job | GET | Index | .find() |
+| 3   | New | none | GET | New | none |
+| 4   | Create | /api/job | POST | none | .create(req.body) |
+| 5   |  Edit  | none | GET | Edit | .findById |
+| 6   | Update | /api/job/:id | PUT | none | .findByIdAndUpdate |
+| 7   | Destroy | /api/job/:id | DELETE | none | .findbyIdAndDelete |
