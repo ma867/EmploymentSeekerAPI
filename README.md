@@ -15,7 +15,7 @@ Our API focuses solely on the the Job Seeker side of the application.
 ![ Sign Up ](https://i.imgur.com/qLxeCAf.png)
 ![ User Profile ](https://i.imgur.com/sDpLX3N.png)
 ## Lucid Chart
-![Lucid Flow Chart](https://i.imgur.com/9FCgKn6.png)
+![Lucid Flow Chart](https://i.imgur.com/N9AOR0a.jpg)
 
 ### Technologies
 ***
