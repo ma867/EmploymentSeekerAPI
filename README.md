@@ -32,7 +32,7 @@ A list of technologies used within the project:
 * Jason Ross - education.js
 * Jade Lee - routeController
 * Lovedy Louisjean - apiController
-* Michael Arthur - experience.js, jobs.js and README.md
+* Michael Arthur - experience.js, jobs.js, user.js and README.md
 
 ### REST-ful Routes
 ***
