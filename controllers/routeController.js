@@ -5,7 +5,7 @@ const apiController = require('./apiController.js')
 
 // add routes for user model
 // user routes
-// Index
+// Index - all the users
 router.get('/api/user', dataController.userIndex, apiController.userIndex)
 // Delete
 router.delete('/api/user/:id', dataController.userDelete, apiController.userShow)
@@ -28,8 +28,6 @@ router.put('/api/experience/:id', dataController.experienceUpdate, apiController
 router.post('/api/experience', dataController.experienceCreate, apiController.experienceShow)
 // Show
 router.get('/api/experience/:id', dataController.experienceShow, apiController.experienceShow)
-//Show all user experience
-router.get('/api/user/:id/experience', dataController.userExperienceShow, apiController.userExperienceShow)
 
 // education routes
 // Index
@@ -42,10 +40,7 @@ router.put('/api/education/:id', dataController.educationUpdate, apiController.e
 router.post('/api/education', dataController.educationCreate, apiController.educationShow)
 // Show
 router.get('/api/education/:id', dataController.educationShow, apiController.educationShow)
-//Show all user education
-router.get('/api/user/:id/education', dataController.userEducationShow, apiController.userEducationShow)
 
-<<<<<<< HEAD
 //job routes
 // Index
 router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
@@ -57,14 +52,5 @@ router.put('/api/job/:id', dataController.jobUpdate, apiController.jobShow)
 router.post('/api/job', dataController.jobCreate, apiController.jobShow)
 // Show
 router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
-=======
-//jobs routes
-
-router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
-
-router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
-
-
->>>>>>> dev
 
 module.exports = router
