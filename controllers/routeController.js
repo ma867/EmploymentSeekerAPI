@@ -28,6 +28,8 @@ router.put('/api/experience/:id', dataController.experienceUpdate, apiController
 router.post('/api/experience', dataController.experienceCreate, apiController.experienceShow)
 // Show
 router.get('/api/experience/:id', dataController.experienceShow, apiController.experienceShow)
+//Show all user experience
+router.get('/api/user/:id/experience', dataController.experienceShow, apiController.experienceShow)
 
 // education routes
 // Index
@@ -40,5 +42,9 @@ router.put('/api/education/:id', dataController.educationUpdate, apiController.e
 router.post('/api/education', dataController.educationCreate, apiController.educationShow)
 // Show
 router.get('/api/education/:id', dataController.educationShow, apiController.educationShow)
+//Show all user education
+router.get('/api/user/:id/education', dataController.educationShow, apiController.educationShow)
+
+
 
 module.exports = router
