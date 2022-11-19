@@ -45,6 +45,7 @@ router.get('/api/education/:id', dataController.educationShow, apiController.edu
 //Show all user education
 router.get('/api/user/:id/education', dataController.userEducationShow, apiController.userEducationShow)
 
+<<<<<<< HEAD
 //job routes
 // Index
 router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
@@ -56,5 +57,14 @@ router.put('/api/job/:id', dataController.jobUpdate, apiController.jobShow)
 router.post('/api/job', dataController.jobCreate, apiController.jobShow)
 // Show
 router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
+=======
+//jobs routes
+
+router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
+
+router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
+
+
+>>>>>>> dev
 
 module.exports = router
