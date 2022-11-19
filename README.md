@@ -26,13 +26,13 @@ A list of technologies used within the project:
 ### Collaboration
 ***
 * Melissa Alzate - Team Lead
-* Michael O'Brien - seed.js, server.js, testing, and expansion
-* Ashley Nickens - user.js, db.js, and Trello
-* Christine Iyer - dataController, 
+* Michael O'Brien - server.js, seed files, testing, dataController, and apiController
+* Ashley Nickens - user.js, db.js, routeController, and Trello
+* Christine Iyer - dataController and apiController
 * Jason Ross - education.js
 * Jade Lee - routeController
 * Lovedy Louisjean - apiController
-* Michael Arthur - experience.js and README.md
+* Michael Arthur - experience.js, jobs.js, user.js and README.md
 
 ### REST-ful Routes
 ***
@@ -70,3 +70,13 @@ A list of technologies used within the project:
 | 5   |  Edit  | none | GET | Edit | .findById |
 | 6   | Update | /api/education/:id | PUT | none | .findByIdAndUpdate |
 | 7   | Destroy | /api/education/:id | DELETE | none | .findbyIdAndDelete |
+
+## Job
+| # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
+|:-----|:--------:|:--------:|:--------:|:--------:|------:|
+| 1   | Index | /api/job | GET | Index | .find() |
+| 3   | New | none | GET | New | none |
+| 4   | Create | /api/job | POST | none | .create(req.body) |
+| 5   |  Edit  | none | GET | Edit | .findById |
+| 6   | Update | /api/job/:id | PUT | none | .findByIdAndUpdate |
+| 7   | Destroy | /api/job/:id | DELETE | none | .findbyIdAndDelete |
