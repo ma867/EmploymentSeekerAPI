@@ -22,8 +22,17 @@ const apiController = {
     
       educationShow (req, res, next) {
         res.json(res.locals.data.foundEducation)
+      },
+
+        userExperienceIndex (req, res, next) {
+            res.json(res.locals.data.foundEducation)
+        },
+        
+        userEducationIndex (req, res, next) {
+            res.json(res.locals.data.foundEducation)
+        }
       }
-  }
+  
   
   
   module.exports = apiController
