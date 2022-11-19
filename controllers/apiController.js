@@ -36,6 +36,12 @@ const apiController = {
         }, 
         jobShow (req, res, next) {
           res.json(res.locals.data.job)
+        }, 
+        userJobsAppliedShow (req, res, next) {
+          res.json(res.locals.data.jobsApplied)
+        }, 
+        userJobsSavedShow (req, res, next) {
+          res.json(res.locals.data.jobsSaved)
         }
   
       }
