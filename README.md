@@ -35,6 +35,8 @@ A list of technologies used within the project:
 | 5   |  Edit  | none | GET | Edit | .findById |
 | 6   | Update | /api/user/:id | PUT | none | .findByIdAndUpdate |
 | 7   | Destroy | /api/user/:id | DELETE | none | .findbyIdAndDelete |
+| 8   |  Show  | /api/user/:id/experience | GET | none | .findById |
+| 9   |  Show  | /api/user/:i/education  | GET | none | .findById |
 
 ## Experience
 | # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
