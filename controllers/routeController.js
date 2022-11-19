@@ -56,5 +56,9 @@ router.put('/api/job/:id', dataController.jobUpdate, apiController.jobShow)
 router.post('/api/job', dataController.jobCreate, apiController.jobShow)
 // Show
 router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
+//Show all jobs applied
+router.get('/api/user/:id/jobsApplied', dataController.userJobsAppliedShow, apiController.userJobsAppliedShow)
+//Show all jobs saved
+router.get('/api/user/:id/jobsSaved', dataController.userJobsSavedShow, apiController.userJobsSavedShow)
 
 module.exports = router
