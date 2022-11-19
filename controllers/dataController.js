@@ -1,6 +1,7 @@
 const User = require('../models/user')
 const Experience = require('../models/experience')
 const Education = require('../models/education')
+const Job = require('../models/job')
 
 
 const dataController = {
@@ -225,8 +226,29 @@ const dataController = {
             next()
         }
     })
+ },
+ jobIndex(req, res, next) {
+    Job.find({}, (err, foundJobs) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.jobs = foundJobs
+            next()
+        }
+    })
+ },
+ jobShow(req, res, next) {
+    Job.findById(req.params.id, (err, foundJob) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.job = foundJob
+            next()
+        }
+    })
  }
-
 }
 
 
