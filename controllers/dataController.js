@@ -201,8 +201,31 @@ const dataController = {
 
          }
      })
- }
+ },
 
+ userExperienceIndex(req, res, next) {
+    User.findById(req.params.id).populate('workExperience').exec((err, foundExperience) => {
+        if(err) {
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.experience = foundExperience
+            next()
+        }
+    })
+ },
+
+ userEducationIndex(req, res, next) {
+    User.findById(req.params.id).populate('education').exec((err, foundEducation) => {
+        if(err) {
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.education = foundEducation
+            next()
+        }
+    })
+ }
 
 }
 
