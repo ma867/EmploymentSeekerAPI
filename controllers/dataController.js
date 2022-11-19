@@ -283,6 +283,28 @@ const dataController = {
         }
     })
  },
+ userJobsAppliedShow(req, res, next) {
+    User.findById(req.params.id).populate('jobsApplied').exec((err, foundJobs) => {
+        if(err) {
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.jobsApplied = foundJobs.jobsApplied
+            next()
+        }
+    })
+ },
+ userJobsSavedShow(req, res, next) {
+    User.findById(req.params.id).populate('jobsSaved').exec((err, foundJobs) => {
+        if(err) {
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.jobsSaved = foundJobs.jobsSaved
+            next()
+        }
+    })
+ }
 }
 
 
