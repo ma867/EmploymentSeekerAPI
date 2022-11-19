@@ -6,7 +6,9 @@ const educationSchema = new mongoose.Schema({
   degree: String,
   currentStatus: Boolean,
   startMonth: String,
-  startYear: String
+  startYear: String,
+  endMonth: String,
+  endYear: String
 })
 // Make A Model From The Schema
 
