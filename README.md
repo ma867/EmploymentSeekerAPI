@@ -48,6 +48,8 @@ A list of technologies used within the project:
 | 7   | Destroy | /api/user/:id | DELETE | none | .findbyIdAndDelete |
 | 8   |  Show  | /api/user/:id/experience | GET | none | .findById |
 | 9   |  Show  | /api/user/:id/education  | GET | none | .findById |
+| 10   |  Show  | /api/user/:id/jobsApplied | GET | none | .findById |
+| 11   |  Show  | /api/user/:id/jobsSaved  | GET | none | .findById |
 
 ## Experience
 | # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
