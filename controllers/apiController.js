@@ -30,10 +30,16 @@ const apiController = {
         
         userEducationIndex (req, res, next) {
             res.json(res.locals.data.foundEducation)
-        }
-        
-        res.json(res.locals.data.education)
+        }, 
+
+        userJobIndex (req, res, next) {
+          res.json(res.locals.data.foundJob)
+      },
+      userJobShow (req, res, next) {
+        res.json(res.locals.data.foundJob)
       }
+        
+        
   
   
   
