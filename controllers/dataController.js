@@ -1,6 +1,7 @@
 const User = require('../models/user')
 const Experience = require('../models/experience')
 const Education = require('../models/education')
+const Job = require('../models/job')
 
 
 const dataController = {
@@ -225,8 +226,63 @@ const dataController = {
             next()
         }
     })
- }
-
+ },
+ jobIndex(req, res, next) {
+    Job.find({}, (err, foundJobs) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.jobs = foundJobs
+            next()
+        }
+    })
+ },
+ jobCreate(req, res, next) {
+    Job.create(req.body, (err, createdJob) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.job = createdJob
+            next()
+        }
+    })
+ },
+ jobDelete(req, res, next) {
+    Job.findByIdAndDelete(req.params.id, (err, deletedJob) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.job = deletedJob
+            next()
+        }
+    })
+ },
+ jobUpdate(req, res, next) {
+    Job.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedJob) => {
+        if (err) {
+            console.error(err)
+            res.status(400).send(err)
+        }
+        else {
+            res.locals.data.job = updatedJob
+            next()
+        }
+    })
+ },
+ jobShow(req, res, next) {
+    Job.findById(req.params.id, (err, foundJob) => {
+        if(err){
+            console.error(err)
+            res.status(400).send(err)
+        } else {
+            res.locals.data.job = foundJob
+            next()
+        }
+    })
+ },
 }
 
 

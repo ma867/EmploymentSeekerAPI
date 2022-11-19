@@ -9,7 +9,8 @@
     "dev": "nodemon",
     "seedEducation": "node models/seedEducation.js",
     "seedExperience": "node models/seedExperience.js",
-    "seedUser": "node models/seedUser.js"
+    "seedUser": "node models/seedUser.js",
+    "seedJobs": "node models/seedJobs.js"
   },
   "repository": {
     "type": "git",
