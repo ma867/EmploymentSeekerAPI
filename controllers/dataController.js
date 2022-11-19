@@ -209,7 +209,7 @@ const dataController = {
             console.error(err)
             res.status(400).send(err)
         } else {
-            res.locals.data.experience = foundExperience
+            res.locals.data.experience = foundExperience.workExperience
             next()
         }
     })
@@ -221,7 +221,7 @@ const dataController = {
             console.error(err)
             res.status(400).send(err)
         } else {
-            res.locals.data.education = foundEducation
+            res.locals.data.education = foundEducation.education
             next()
         }
     })
