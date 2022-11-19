@@ -45,6 +45,12 @@ router.get('/api/education/:id', dataController.educationShow, apiController.edu
 //Show all user education
 router.get('/api/user/:id/education', dataController.userEducationShow, apiController.userEducationShow)
 
+//jobs routes
+
+router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
+
+router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
+
 
 
 module.exports = router
