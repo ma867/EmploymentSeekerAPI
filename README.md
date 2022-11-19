@@ -27,7 +27,7 @@ A list of technologies used within the project:
 ***
 * Melissa Alzate - Team Lead
 * Michael O'Brien - seed.js, server.js, testing, and expansion
-* Ashley N - user.js, db.js, and Trello
+* Ashley Nickens - user.js, db.js, and Trello
 * Christine Iyer - dataController, 
 * Jason Ross - education.js
 * Jade Lee - routeController
