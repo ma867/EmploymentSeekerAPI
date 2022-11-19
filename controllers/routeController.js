@@ -45,6 +45,16 @@ router.get('/api/education/:id', dataController.educationShow, apiController.edu
 //Show all user education
 router.get('/api/user/:id/education', dataController.userEducationShow, apiController.userEducationShow)
 
-
+//job routes
+// Index
+router.get('/api/job', dataController.jobIndex, apiController.jobIndex)
+// Delete
+router.delete('/api/job/:id', dataController.jobDelete, apiController.jobShow)
+// Update
+router.put('/api/job/:id', dataController.jobUpdate, apiController.jobShow)
+// Create
+router.post('/api/job', dataController.jobCreate, apiController.jobShow)
+// Show
+router.get('/api/job/:id', dataController.jobShow, apiController.jobShow)
 
 module.exports = router
