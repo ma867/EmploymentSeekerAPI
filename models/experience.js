@@ -7,7 +7,9 @@ const experienceSchema = new mongoose.Schema({
   location: { type: String },
   currentStatus: { type: Boolean, required: true },
   startMonth: { type: String },
-  startYear: { type: String }
+  startYear: { type: String },
+  endMonth: { type: String },
+  endYear: { type: String }
 })
 
 const Experience = mongoose.model('Experience', experienceSchema)
