@@ -1,51 +1,48 @@
 const apiController = {
-    //Functions for user model
-    userIndex (req, res, next) {
-      res.json(res.locals.data.users)
-    },
-    
-    experienceIndex (req, res, next) {
-        res.json(res.locals.data.experiences)
-      },
+  // Functions for user model
+  userIndex (req, res, next) {
+    res.json(res.locals.data.users)
+  },
 
-      educationIndex (req, res, next) {
-        res.json(res.locals.data.educations)
-      },
-     
+  experienceIndex (req, res, next) {
+    res.json(res.locals.data.experiences)
+  },
 
-    userShow (req, res, next) {
-      res.json(res.locals.data.user)
-    },
-    experienceShow (req, res, next) {
-        res.json(res.locals.data.experience)
-      },
-    
-      educationShow (req, res, next) {
-        res.json(res.locals.data.education)
-      },
+  educationIndex (req, res, next) {
+    res.json(res.locals.data.educations)
+  },
 
-        userExperienceShow (req, res, next) {
-            res.json(res.locals.data.experience)
-        },
-        
-        userEducationShow (req, res, next) {
-            res.json(res.locals.data.education)
-        }, 
-        jobIndex (req, res, next) {
-          res.json(res.locals.data.jobs)
-        }, 
-        jobShow (req, res, next) {
-          res.json(res.locals.data.job)
-        },
-        userJobsAppliedShow (req, res, next) {
-          res.json(res.locals.data.jobsApplied)
-        }, 
-        userJobsSavedShow (req, res, next) {
-          res.json(res.locals.data.jobsSaved)
-        }
-  
-      }
-  
-  
-  
-  module.exports = apiController
+  userShow (req, res, next) {
+    res.json(res.locals.data.user)
+  },
+  experienceShow (req, res, next) {
+    res.json(res.locals.data.experience)
+  },
+
+  educationShow (req, res, next) {
+    res.json(res.locals.data.education)
+  },
+
+  userExperienceShow (req, res, next) {
+    res.json(res.locals.data.experience)
+  },
+
+  userEducationShow (req, res, next) {
+    res.json(res.locals.data.education)
+  },
+  jobIndex (req, res, next) {
+    res.json(res.locals.data.jobs)
+  },
+  jobShow (req, res, next) {
+    res.json(res.locals.data.job)
+  },
+  userJobsAppliedShow (req, res, next) {
+    res.json(res.locals.data.jobsApplied)
+  },
+  userJobsSavedShow (req, res, next) {
+    res.json(res.locals.data.jobsSaved)
+  }
+
+}
+
+module.exports = apiController

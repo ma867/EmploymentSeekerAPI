@@ -3,31 +3,28 @@ const express = require('express')
 const PORT = process.env.PORT || 8000
 const db = require('./models/db')
 
-
-//----------CREATE EXPRESS----------//
+// ----------CREATE EXPRESS----------//
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use((req, res, next) => {
-    res.locals.data = {}
-    next()
-  })
-  app.use('/invisibleStrengths', require('./controllers/routeController'))
+  res.locals.data = {}
+  next()
+})
+app.use('/invisibleStrengths', require('./controllers/routeController'))
 
 db.once('open', () => {
-    console.log('YERRRRR it\'s connected to MongoDB')
+  console.log('YERRRRR it\'s connected to MongoDB')
 })
 
-//----------TEST EXPRESS----------//
-app.get('/', (req,res)=>{
-    res.send("YERRRRR IT'S WORKING")
+// ----------TEST EXPRESS----------//
+app.get('/', (req, res) => {
+  res.send("YERRRRR IT'S WORKING")
 })
 
+// ----------MIDDLEWARE----------//
 
-//----------MIDDLEWARE----------//
-
-
-//----------LISTENER----------//
+// ----------LISTENER----------//
 app.listen(PORT, () => {
-    console.log('yerrrr its running on', PORT)
+  console.log('yerrrr its running on', PORT)
 })
