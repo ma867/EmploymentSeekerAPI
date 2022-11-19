@@ -21,18 +21,17 @@ const apiController = {
       },
     
       educationShow (req, res, next) {
-        res.json(res.locals.data.foundEducation)
+        res.json(res.locals.data.education)
       },
 
-        userExperienceIndex (req, res, next) {
-            res.json(res.locals.data.foundEducation)
+        userExperienceShow (req, res, next) {
+            res.json(res.locals.data.experience)
         },
         
-        userEducationIndex (req, res, next) {
-            res.json(res.locals.data.foundEducation)
+        userEducationShow (req, res, next) {
+            res.json(res.locals.data.education)
         }
-        
-        res.json(res.locals.data.education)
+  
       }
   
   
