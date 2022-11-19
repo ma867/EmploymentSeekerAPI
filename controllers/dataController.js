@@ -203,7 +203,7 @@ const dataController = {
      })
  },
 
- userExperienceIndex(req, res, next) {
+ userExperienceShow(req, res, next) {
     User.findById(req.params.id).populate('workExperience').exec((err, foundExperience) => {
         if(err) {
             console.error(err)
@@ -215,7 +215,7 @@ const dataController = {
     })
  },
 
- userEducationIndex(req, res, next) {
+ userEducationShow(req, res, next) {
     User.findById(req.params.id).populate('education').exec((err, foundEducation) => {
         if(err) {
             console.error(err)
