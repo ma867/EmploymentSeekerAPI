@@ -23,6 +23,17 @@ A list of technologies used within the project:
 * [ JavaScript ]
 * [ MongoDB ]
 
+### Collaboration
+***
+* Melissa Alzate - Team Lead
+* Michael O'Brien - seed.js, server.js, testing, and expansion
+* Ashley N - user.js, db.js, and Trello
+* Christine Iyer - dataController, 
+* Jason Ross - education.js
+* Jade Lee - routeController
+* Lovedy Louisjean - apiController
+* Michael Arthur - experience.js and README.md
+
 ### REST-ful Routes
 ***
 ## User
@@ -36,7 +47,7 @@ A list of technologies used within the project:
 | 6   | Update | /api/user/:id | PUT | none | .findByIdAndUpdate |
 | 7   | Destroy | /api/user/:id | DELETE | none | .findbyIdAndDelete |
 | 8   |  Show  | /api/user/:id/experience | GET | none | .findById |
-| 9   |  Show  | /api/user/:i/education  | GET | none | .findById |
+| 9   |  Show  | /api/user/:id/education  | GET | none | .findById |
 
 ## Experience
 | # |  Action  | URL | HTTP Verb |  JSX View File  | Mongoose Method |
